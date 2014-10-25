@@ -97,7 +97,7 @@ How
 
 * Put business rules, long expressions, if statements, math formulas, metadata, etc. in only one place.
 * Identify the single, definitive source of every piece of knowledge used in your system, and then use that source to generate applicable instances of that knowledge (code, documentation, tests, etc).
-* Apply the [Rule of three](http://en.wikipedia.org/wiki/Rule_of_three_(computer_programming\))
+* Apply the [Rule of three](http://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
 Resources
 
@@ -107,7 +107,7 @@ Resources
 
 Related
 
-* [Abstraction principle](http://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming\))
+* [Abstraction principle](http://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming))
 * [Once And Only Once](http://c2.com/cgi/wiki?OnceAndOnlyOnce) is a subset of DRY (also referred to as the goal of refactoring).
 * [Single Source of Truth](http://en.wikipedia.org/wiki/Single_Source_of_Truth)
 * A violation of DRY is [WET](http://thedailywtf.com/articles/The-WET-Cart) (Write Everything Twice)
@@ -172,7 +172,7 @@ How
 
 Resources
 
-* [Coupling](http://en.wikipedia.org/wiki/Coupling_(computer_programming\))
+* [Coupling](http://en.wikipedia.org/wiki/Coupling_(computer_programming))
 * [Coupling And Cohesion](http://c2.com/cgi/wiki?CouplingAndCohesion)
 
 ## Law of Demeter
@@ -222,7 +222,7 @@ Resources
 Resources
 
 * [Be Orthogonal](http://www.artima.com/intv/dry3.html)
-* [Orthogonality](http://en.wikipedia.org/wiki/Orthogonality_(programming\))
+* [Orthogonality](http://en.wikipedia.org/wiki/Orthogonality_(programming))
 
 ## Maximise Cohesion
 
@@ -240,7 +240,7 @@ How
 
 Resources
 
-* [Cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science\))
+* [Cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science))
 * [Coupling And Cohesion](http://c2.com/cgi/wiki?CouplingAndCohesion)
 
 ## Liskov Substitution Principle
