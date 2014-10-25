@@ -6,6 +6,33 @@ This overview is a reference for myself, and I've just put it here. Maybe it is 
 
 The list was inspired by [The Principles of Good Programming](http://www.artima.com/weblogs/viewpost.jsp?thread=331531). I felt that the list closely, but not completely matches what I would personally put into something similar. Additionally, I wanted a bit more reasoning, details, and links to further resources.
 
+## Contents
+
+### Generic
+
+* [KISS (Keep It Simple Stupid)](#kiss)
+* [Avoid YAGNI](#avoid-yagni)
+* [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
+* [Keep Things DRY](#keep-things-dry)
+* [Code For The Maintainer](#code-for-the-maintainer)
+* [Avoid Premature Optimization](#avoid-premature-optimization)
+
+### Inter-Module
+
+* [Minimise Coupling](#minimise-coupling)
+* [Law of Demeter](#law-of-demeter)
+* [Composition Over Inheritance](#composition-over-inheritance)
+* [Orthogonality](#orthogonality)
+
+### Module
+
+* [Maximise Cohesion](#maximise-cohesion)
+* [Liskov Substitution Principle](#liskov-substitution-principle)
+* [Open/Closed Principle](#openclosed-principle)
+* [Single Responsibility Principle](#single-responsibility-principle)
+* [Hide Implementation Details](#hide-implementation-details)
+* [Curly's Law](#curlys-law)
+
 ## KISS
 
 Most systems work best if they are kept simple rather than made complex.
