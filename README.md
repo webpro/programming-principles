@@ -95,7 +95,7 @@ How
 
 * Put business rules, long expressions, if statements, math formulas, metadata, etc. in only one place.
 * Identify the single, definitive source of every piece of knowledge used in your system, and then use that source to generate applicable instances of that knowledge (code, documentation, tests, etc).
-* Apply the [Rule of three](http://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
+* Apply the [Rule of three](http://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
 
 Resources
 
@@ -122,7 +122,7 @@ How
 * Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.
 * Always code and comment in such a way that if someone a few notches junior picks up the code, they will take pleasure in reading and learning from it.
 * [Don't make me think](http://www.sensible.com/dmmt.html).
-* Use the [PLA](http://en.wikipedia.org/wiki/Principle_of_least_astonishment) (Principle of Least Astonishment).
+* Use the [Principle of Least Astonishment](http://en.wikipedia.org/wiki/Principle_of_least_astonishment).
 
 Resources
 
@@ -166,7 +166,7 @@ How
 
 * Eliminate, minimise, and reduce complexity of necessary relationships.
 * By hiding implementation details, coupling is reduced.
-* Apply the Law of Demeter.
+* Apply the [Law of Demeter](#law-of-demeter).
 
 Resources
 
@@ -184,7 +184,8 @@ Why
 
 How
 
-* A method of an object may only call methods of:
+A method of an object may only call methods of:
+
   1. The object itself.
   1. An argument of the method.
   1. Any object created within the method.
@@ -215,12 +216,11 @@ Resources
 
 > The basic idea of orthogonality is that things that are not related conceptually should not be related in the system.
 
+Source: [Be Orthogonal](http://www.artima.com/intv/dry3.html)
+
 > It is associated with simplicity; the more orthogonal the design, the fewer exceptions. This makes it easier to learn, read and write programs in a programming language. The meaning of an orthogonal feature is independent of context; the key parameters are symmetry and consistency.
 
-Resources
-
-* [Be Orthogonal](http://www.artima.com/intv/dry3.html)
-* [Orthogonality](http://en.wikipedia.org/wiki/Orthogonality_(programming))
+Source: [Orthogonality](http://en.wikipedia.org/wiki/Orthogonality_(programming))
 
 ## Maximise Cohesion
 
@@ -282,7 +282,7 @@ Why
 
 How
 
-* Apply [Curly's Law](#Curly-s-Law)
+* Apply [Curly's Law](#Curly-s-Law).
 
 Resources
 
