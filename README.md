@@ -1,8 +1,6 @@
 # Programming Principles
 
-Every programmer benefits from understanding programming principles and patterns. It's interesting to work with people and see which principles they follow, how rigorously, and how trade-offs between conflicting principles are handled.
-
-This overview is a reference for myself, and I've just put it here. Maybe it is of help to you during design, discussion, or review. Please note that it's far from complete. Prevent the principles listed here from causing a narrow vision in your own situation. And please let me know if you have any improvements.
+Every programmer benefits from understanding programming principles and patterns. This overview is a reference for myself, and I've just put it here. Maybe it is of help to you during design, discussion, or review. Please note that it's far from complete. Prevent the principles listed here from causing a narrow vision in your own situation. And please let me know if you have any improvements.
 
 The list was inspired by [The Principles of Good Programming](http://www.artima.com/weblogs/viewpost.jsp?thread=331531). I felt that the list closely, but not completely matches what I would personally put into something similar. Additionally, I wanted a bit more reasoning, details, and links to further resources.
 
