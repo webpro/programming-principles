@@ -15,14 +15,14 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Code For The Maintainer](#code-for-the-maintainer)
 * [Avoid Premature Optimization](#avoid-premature-optimization)
 
-### Inter-Module
+### Inter-Module/Class
 
 * [Minimise Coupling](#minimise-coupling)
 * [Law of Demeter](#law-of-demeter)
 * [Composition Over Inheritance](#composition-over-inheritance)
 * [Orthogonality](#orthogonality)
 
-### Module
+### Module/Class
 
 * [Maximise Cohesion](#maximise-cohesion)
 * [Liskov Substitution Principle](#liskov-substitution-principle)
