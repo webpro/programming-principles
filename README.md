@@ -9,7 +9,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 ### Generic
 
 * [KISS (Keep It Simple Stupid)](#kiss)
-* [Avoid YAGNI](#avoid-yagni)
+* [YAGNI](#yagni)
 * [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
 * [Keep Things DRY](#keep-things-dry)
 * [Code For The Maintainer](#code-for-the-maintainer)
@@ -46,9 +46,9 @@ Resources
 * [KISS principle](http://en.wikipedia.org/wiki/KISS_principle)
 * [Keep It Simple Stupid (KISS)](http://principles-wiki.net/principles:keep_it_simple_stupid)
 
-## Avoid YAGNI
+## YAGNI
 
-Don't implement something until it is necessary.
+YAGNI stands for "you aren't gonna need it": don't implement something until it is necessary.
 
 Why
 
