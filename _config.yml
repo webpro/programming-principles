@@ -1,0 +1,4 @@
+layouts: ./webpro.github.io/_layouts
+markdown: redcarpet
+redcarpet:
+    extensions: ["autolink", "with_toc_data"]

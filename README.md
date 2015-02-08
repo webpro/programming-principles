@@ -1,3 +1,10 @@
+---
+layout: index
+type: project
+title: Programming Principles
+slug: programming-principles
+---
+
 # Programming Principles
 
 Every programmer benefits from understanding programming principles and patterns. This overview is a reference for myself, and I've just put it here. Maybe it is of help to you during design, discussion, or review. Please note that it's far from complete, and that you often need to make trade-offs between conflicting principles.
