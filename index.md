@@ -33,10 +33,10 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 
 * [Maximise Cohesion](#maximise-cohesion)
 * [Liskov Substitution Principle](#liskov-substitution-principle)
-* [Open/Closed Principle](#openclosed-principle)
+* [Open/Closed Principle](#open-closed-principle)
 * [Single Responsibility Principle](#single-responsibility-principle)
 * [Hide Implementation Details](#hide-implementation-details)
-* [Curly's Law](#curlys-law)
+* [Curly's Law](#curly-39-s-law)
 
 ## KISS
 
