@@ -30,6 +30,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Single Responsibility Principle](#single-responsibility-principle)
 * [Hide Implementation Details](#hide-implementation-details)
 * [Curly's Law](#curlys-law)
+* [Encapsulate What Changes](#encapsulate-what-changes)
 
 ## KISS
 
@@ -315,3 +316,22 @@ Curly's Law is about choosing a single, clearly defined goal for any particular 
 
 * [Curly's Law: Do One Thing](http://blog.codinghorror.com/curlys-law-do-one-thing/)
 * [The Rule of One or Curly’s Law](http://fortyplustwo.com/2008/09/06/the-rule-of-one-or-curlys-law/)
+
+## Encapsulate What Changes
+
+A good design identifies the hotspots that are most likely to change and encapsulates them behind an API. When an anticipated change then occurs, the modifications are kept local.
+
+Why
+
+* To minimize required modifications when a change occurs
+
+How
+
+* Encapsulate the concept that varies behind an API
+* Possibly separate the varying concept into its own module
+
+Resources
+
+* [Encapsulate the Concept that Varies](http://principles-wiki.net/principles:encapsulate_the_concept_that_varies)
+* [Encapsulate What Varies](http://blogs.msdn.com/b/steverowe/archive/2007/12/26/encapsulate-what-varies.aspx)
+* [Information Hiding](https://en.wikipedia.org/wiki/Information_hiding)
