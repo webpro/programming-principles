@@ -30,6 +30,8 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Single Responsibility Principle](#single-responsibility-principle)
 * [Hide Implementation Details](#hide-implementation-details)
 * [Curly's Law](#curlys-law)
+* [Interface Segregation](#interface-segregation)
+
 
 ## KISS
 
@@ -315,3 +317,13 @@ Curly's Law is about choosing a single, clearly defined goal for any particular 
 
 * [Curly's Law: Do One Thing](http://blog.codinghorror.com/curlys-law-do-one-thing/)
 * [The Rule of One or Curly’s Law](http://fortyplustwo.com/2008/09/06/the-rule-of-one-or-curlys-law/)
+
+## Interface Segregation
+
+Reduce fat interfaces into many client specific interfaces. An interfaces should be more dependent on the code that calls it  than the code that implements it. 
+
+Why
+* If a class implements methods that are not needed the caller needs to know about the method implementation of that class. For example if a class implements a method but simply throws then the caller will need to know that this method shouldnt actually be called
+
+How
+* Avoid fat interfaces. Classes should never have to implement methods that violate the [Single responsibility principle](#single-responsibility-principle) 
