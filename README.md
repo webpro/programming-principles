@@ -31,6 +31,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Hide Implementation Details](#hide-implementation-details)
 * [Curly's Law](#curlys-law)
 * [Encapsulate What Changes](#encapsulate-what-changes)
+* [Interface Segregation](#interface-segregation)
 
 ## KISS
 
@@ -335,3 +336,19 @@ Resources
 * [Encapsulate the Concept that Varies](http://principles-wiki.net/principles:encapsulate_the_concept_that_varies)
 * [Encapsulate What Varies](http://blogs.msdn.com/b/steverowe/archive/2007/12/26/encapsulate-what-varies.aspx)
 * [Information Hiding](https://en.wikipedia.org/wiki/Information_hiding)
+
+## Interface Segregation Principle
+
+Reduce fat interfaces into multiple smaller and more specific client specific interfaces. An interface should be more dependent on the code that calls it than the code that implements it. 
+
+Why
+
+* If a class implements methods that are not needed the caller needs to know about the method implementation of that class. For example if a class implements a method but simply throws then the caller will need to know that this method shouldn't actually be called.
+
+How
+
+* Avoid fat interfaces. Classes should never have to implement methods that violate the [Single responsibility principle](#single-responsibility-principle).
+
+Resources
+
+* [Interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
