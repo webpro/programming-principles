@@ -31,7 +31,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Hide Implementation Details](#hide-implementation-details)
 * [Curly's Law](#curlys-law)
 * [Encapsulate What Changes](#encapsulate-what-changes)
-* [Interface Segregation](#interface-segregation)
+* [Interface Segregation Principle](#interface-segregation-principle)
 
 ## KISS
 
