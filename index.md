@@ -29,6 +29,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Law of Demeter](#law-of-demeter)
 * [Composition Over Inheritance](#composition-over-inheritance)
 * [Orthogonality](#orthogonality)
+* [Separation of Concerns](#separation-of-concerns)
 
 ### Module/Class
 
@@ -233,6 +234,22 @@ Source: [Be Orthogonal](http://www.artima.com/intv/dry3.html)
 > It is associated with simplicity; the more orthogonal the design, the fewer exceptions. This makes it easier to learn, read and write programs in a programming language. The meaning of an orthogonal feature is independent of context; the key parameters are symmetry and consistency.
 
 Source: [Orthogonality](http://en.wikipedia.org/wiki/Orthogonality_(programming))
+
+## Separation of Concerns
+
+Separation of concerns is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern. For example the business logic of the application is a concern and the user interface is another concern. Changing the user interface should not require changes to business logic and vice versa.
+
+Why
+
+* Simplify development and maintenance of software applications.
+
+How
+
+* Break program functionality into separate modules that overlap as little as possible.
+
+Resources
+
+* [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 ## Maximise Cohesion
 
