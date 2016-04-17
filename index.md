@@ -38,7 +38,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Open/Closed Principle](#open-closed-principle)
 * [Single Responsibility Principle](#single-responsibility-principle)
 * [Hide Implementation Details](#hide-implementation-details)
-* [Curly's Law](#curly-39-s-law)
+* [Curly's Law](#curlys-law)
 * [Encapsulate What Changes](#encapsulate-what-changes)
 * [Interface Segregation Principle](#interface-segregation-principle)
 * [Command Query Separation](#command-query-separation)
