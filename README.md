@@ -23,7 +23,7 @@ The list was inspired by [The Principles of Good Programming](http://www.artima.
 * [Law of Demeter](#law-of-demeter)
 * [Composition Over Inheritance](#composition-over-inheritance)
 * [Orthogonality](#orthogonality)
-* [Robustness Principle](#robustness)
+* [Robustness Principle](#robustness-principle)
 
 ### Module/Class
 
