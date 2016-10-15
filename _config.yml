@@ -1,4 +1,6 @@
-layouts: ./webpro.github.io/_layouts
-markdown: redcarpet
-redcarpet:
-    extensions: ["autolink", "with_toc_data"]
+layouts_dir: ./webpro.github.io/_layouts
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: ~
