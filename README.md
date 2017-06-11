@@ -298,7 +298,6 @@ The LSP is all about expected behavior of objects:
 Resources
 
 * [Liskov substitution principle](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
-* [The Liskov Substitution Principle](http://freshbrewedcode.com/derekgreer/2011/12/31/solid-javascript-the-liskov-substitution-principle/)
 
 ## Open/Closed Principle
 
@@ -316,7 +315,6 @@ How
 Resources
 
 * [Open Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle)
-* [SOLID JavaScript: The Open/Closed Principle](http://freshbrewedcode.com/derekgreer/2011/12/19/solid-javascript-the-openclosed-principle/)
 
 ## Single Responsibility Principle
 
@@ -383,7 +381,7 @@ Resources
 
 ## Interface Segregation Principle
 
-Reduce fat interfaces into multiple smaller and more specific client specific interfaces. An interface should be more dependent on the code that calls it than the code that implements it. 
+Reduce fat interfaces into multiple smaller and more specific client specific interfaces. An interface should be more dependent on the code that calls it than the code that implements it.
 
 Why
 
