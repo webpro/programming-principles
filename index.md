@@ -304,7 +304,9 @@ The LSP is all about expected behavior of objects:
 
 Resources
 
-* [Liskov substitution principle](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
+* [LSP with example (blackwasp)](http://www.blackwasp.co.uk/lsp.aspx)
+* [LSP with example (oodesign)](http://www.oodesign.com/liskov-s-substitution-principle.html)
+* [LSP wikipedia](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
 ## Open/Closed Principle
 
@@ -321,7 +323,9 @@ How
 
 Resources
 
-* [Open Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle)
+* [OCP with example (8thlight)](https://8thlight.com/blog/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)
+* [OCP explaination (oodesign)](http://www.oodesign.com/open-close-principle.html)
+* [OCP wikipedia](http://en.wikipedia.org/wiki/Open/closed_principle)
 
 ## Single Responsibility Principle
 
