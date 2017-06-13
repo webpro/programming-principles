@@ -289,7 +289,7 @@ Resources
 * [Cohesion](http://en.wikipedia.org/wiki/Cohesion_(computer_science))
 * [Coupling And Cohesion](http://c2.com/cgi/wiki?CouplingAndCohesion)
 
-## Liskov Substitution Principle
+## Liskov Substitution Principle (LSP)
 
 The LSP is all about expected behavior of objects:
 
@@ -297,9 +297,11 @@ The LSP is all about expected behavior of objects:
 
 Resources
 
-* [Liskov substitution principle](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
+* [LSP with example (blackwasp)](http://www.blackwasp.co.uk/lsp.aspx)
+* [LSP with example (oodesign)](http://www.oodesign.com/liskov-s-substitution-principle.html)
+* [LSP wikipedia](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
-## Open/Closed Principle
+## Open/Closed Principle (OCP)
 
 Software entities (e.g. classes) should be open for extension, but closed for modification. I.e. such an entity can allow its behavior to be modified without altering its source code.
 
@@ -314,7 +316,9 @@ How
 
 Resources
 
-* [Open Closed Principle](http://en.wikipedia.org/wiki/Open/closed_principle)
+* [OCP with example (8thlight)](https://8thlight.com/blog/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)
+* [OCP explaination (oodesign)](http://www.oodesign.com/open-close-principle.html)
+* [OCP wikipedia](http://en.wikipedia.org/wiki/Open/closed_principle)
 
 ## Single Responsibility Principle
 
