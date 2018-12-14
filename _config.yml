@@ -1,6 +1,0 @@
-layouts_dir: ./webpro.github.io/_layouts
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: ~
