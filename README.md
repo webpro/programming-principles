@@ -137,6 +137,7 @@ Related
 * [Once And Only Once](http://c2.com/cgi/wiki?OnceAndOnlyOnce) is a subset of DRY (also referred to as the goal of refactoring).
 * [Single Source of Truth](http://en.wikipedia.org/wiki/Single_Source_of_Truth)
 * A violation of DRY is [WET](http://thedailywtf.com/articles/The-WET-Cart) (Write Everything Twice)
+* [Be careful with the code metric "duplicated lines"](https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html)
 
 ## Code For The Maintainer
 
