@@ -127,9 +127,9 @@ How
 
 Resources
 
-* [Dont Repeat Yourself](http://c2.com/cgi/wiki?DontRepeatYourself)
+* [Don't Repeat Yourself](http://c2.com/cgi/wiki?DontRepeatYourself)
 * [Don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself)
-* [Don't Repeat Yourself](http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself)
+* [Don't Repeat Yourself](https://www.oreilly.com/library/view/97-things-every/9780596809515/ch30.html)
 
 Related
 
