@@ -18,11 +18,11 @@ have any feedback or suggestions for improvement.
 
 ### Generic
 
-- [KISS (Keep It Simple Stupid)](#kiss)
+- [KISS (Keep It Simple, Stupid)](#kiss-keep-it-simple-stupid)
 - [YAGNI](#yagni)
 - [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
 - [Separation of Concerns](#separation-of-concerns)
-- [Keep Things DRY](#keep-things-dry)
+- [Keep things DRY](#keep-things-dry)
 - [Code For The Maintainer](#code-for-the-maintainer)
 - [Avoid Premature Optimization](#avoid-premature-optimization)
 - [Boy-Scout Rule](#boy-scout-rule)
@@ -48,7 +48,7 @@ have any feedback or suggestions for improvement.
 - [Interface Segregation Principle](#interface-segregation-principle)
 - [Command Query Separation](#command-query-separation)
 
-## KISS
+## KISS (Keep It Simple, Stupid)
 
 Most systems work best if they are kept simple rather than made complex.
 
@@ -229,6 +229,29 @@ Resources
 
 - [Program optimization](https://en.wikipedia.org/wiki/Program_optimization)
 - [Premature Optimization](http://wiki.c2.com/?PrematureOptimization)
+
+## Boy-Scout Rule
+
+The Boy Scouts of America have a simple rule that we can apply to our
+profession: "Leave the campground cleaner than you found it". The boy-scout rule
+states that we should always leave the code cleaner than we found it.
+
+Why
+
+- When making changes to an existing codebase the code quality tends to degrade,
+  accumulating technical debt. Following the boyscout rule, we should mind the
+  quality with each commit. Technical debt is resisted by continuous
+  refactoring, no matter how small.
+
+How
+
+- With each commit make sure it does not degrade the codebase quality.
+- Any time someone sees some code that isn't as clear as it should be, they
+  should take the opportunity to fix it right there and then.
+
+Resources
+
+- [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
 
 ## Minimise Coupling
 
@@ -524,29 +547,6 @@ How
 Resources
 
 - [Interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
-
-## Boy-Scout Rule
-
-The Boy Scouts of America have a simple rule that we can apply to our
-profession: "Leave the campground cleaner than you found it". The boy-scout rule
-states that we should always leave the code cleaner than we found it.
-
-Why
-
-- When making changes to an existing codebase the code quality tends to degrade,
-  accumulating technical debt. Following the boyscout rule, we should mind the
-  quality with each commit. Technical debt is resisted by continuous
-  refactoring, no matter how small.
-
-How
-
-- With each commit make sure it does not degrade the codebase quality.
-- Any time someone sees some code that isn't as clear as it should be, they
-  should take the opportunity to fix it right there and then.
-
-Resources
-
-- [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
 
 ## Command Query Separation
 
