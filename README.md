@@ -26,6 +26,8 @@ have any feedback or suggestions for improvement.
 - [Code For The Maintainer](#code-for-the-maintainer)
 - [Avoid Premature Optimization](#avoid-premature-optimization)
 - [Boy-Scout Rule](#boy-scout-rule)
+- [FIRST principles of testing](#first-principles-of-testing)
+- [Arrange, Act, Assert](#arrange-act-assert)
 
 ### Inter-Module/Class
 
@@ -252,6 +254,26 @@ How
 Resources
 
 - [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
+
+## FIRST principles of testing
+
+The FIRST testing principles mean that tests should be fast, isolated,
+repeatable, self-validating and timely.
+
+Resources
+
+- [F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html)
+
+## Arrange, Act, Assert
+
+The 3A's are a pattern to arrange and format code in unit tests. _Arrange_ all
+necessary preconditions and inputs. _Act_ on the object or method under test.
+_Assert_ that the expected results have occurred.
+
+Resources
+
+- [Arrange Act Assert](https://wiki.c2.com/?ArrangeActAssert)
+- [3A - Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/)
 
 ## Minimise Coupling
 
