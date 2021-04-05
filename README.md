@@ -1,24 +1,22 @@
 # Programming Principles
 
-Every programmer benefits from understanding programming principles and
-patterns. This overview is a reference for myself, and I've just put it here.
-Maybe it is of help to you during design, discussion, or review. Please note
-that it's far from complete, and that you often need to make trade-offs between
-conflicting principles.
+Every programmer benefits from understanding programming principles and design
+patterns. This overview is a reference for myself, and maybe it is of help to
+you during design, discussion, or review. The list is incomplete, and sometimes
+trade-offs need to be made between conflicting principles. However, higher
+ranked principles usually beat lower ranked ones.
 
 The list was inspired by
 [The Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531).
-I felt that the list closely, but not completely matches what I would personally
-put into something similar. Additionally, I wanted a bit more reasoning,
-details, and links to further resources.
+I've added a bit more reasoning, details, and links to further resources.
 [Let me know](https://github.com/webpro/programming-principles/issues) if you
-have any feedback or suggestions for improvement.
+have any feedback or suggestions for improvement!
 
 ## Contents
 
 ### Generic
 
-- [KISS (Keep It Simple, Stupid)](#kiss-keep-it-simple-stupid)
+- [KISS](#kiss)
 - [YAGNI](#yagni)
 - [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
 - [Separation of Concerns](#separation-of-concerns)
@@ -26,8 +24,6 @@ have any feedback or suggestions for improvement.
 - [Code For The Maintainer](#code-for-the-maintainer)
 - [Avoid Premature Optimization](#avoid-premature-optimization)
 - [Boy-Scout Rule](#boy-scout-rule)
-- [FIRST principles of testing](#first-principles-of-testing)
-- [Arrange, Act, Assert](#arrange-act-assert)
 
 ### Inter-Module/Class
 
@@ -49,10 +45,17 @@ have any feedback or suggestions for improvement.
 - [Encapsulate What Changes](#encapsulate-what-changes)
 - [Interface Segregation Principle](#interface-segregation-principle)
 - [Command Query Separation](#command-query-separation)
+- [SOLID](#solid)
 
-## KISS (Keep It Simple, Stupid)
+### Test
 
-Most systems work best if they are kept simple rather than made complex.
+- [FIRST principles of testing](#first-principles-of-testing)
+- [Arrange, Act, Assert](#arrange-act-assert)
+
+## KISS
+
+**Keep It Simple, Stupid**: most systems work best if they are kept simple
+rather than made complex.
 
 Why
 
@@ -68,8 +71,7 @@ Resources
 
 ## YAGNI
 
-YAGNI stands for "you aren't gonna need it": don't implement something until it
-is necessary.
+**You Aren't Gonna Need It**: don't implement something until it is necessary.
 
 Why
 
@@ -107,9 +109,9 @@ Resources
 
 Separation of concerns is a design principle for separating a computer program
 into distinct sections, such that each section addresses a separate concern. For
-example the business logic of the application is a concern and the user
-interface is another concern. Changing the user interface should not require
-changes to business logic and vice versa.
+example, the business logic and the user interface of an application are
+separate concerns. Changing the user interface should not require changes to the
+business logic and vice versa.
 
 Quoting [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
 (1974):
@@ -138,8 +140,8 @@ Resources
 
 ## Keep things DRY
 
-Every piece of knowledge must have a single, unambiguous, authoritative
-representation within a system.
+**Don't Repeat Yourself**: Every piece of knowledge must have a single,
+unambiguous, authoritative representation within a system.
 
 Each significant piece of functionality in a program should be implemented in
 just one place in the source code. Where similar functions are carried out by
@@ -208,13 +210,13 @@ Resources
 Quoting [Donald Knuth](https://en.wikiquote.org/wiki/Donald_Knuth):
 
 > Programmers waste enormous amounts of time thinking about, or worrying about,
-> the speed of noncritical parts of their programs, and these attempts at
+> the speed of non-critical parts of their programs, and these attempts at
 > efficiency actually have a strong negative impact when debugging and
 > maintenance are considered. We should forget about small efficiencies, say
 > about 97% of the time: premature optimization is the root of all evil. Yet we
 > should not pass up our opportunities in that critical 3%.
 
-Understanding what is and isn’t "premature" is critical of course.
+Understanding what is and isn’t "premature" is critical.
 
 Why
 
@@ -225,23 +227,23 @@ How
 
 - [Make It Work Make It Right Make It Fast](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast)
 - Don't optimize until you need to, and only after profiling you discover a
-  bottleneck optimise that.
+  bottleneck to optimise.
 
 Resources
 
 - [Program optimization](https://en.wikipedia.org/wiki/Program_optimization)
 - [Premature Optimization](http://wiki.c2.com/?PrematureOptimization)
 
-## Boy-Scout Rule
+## Boy Scout Rule
 
 The Boy Scouts of America have a simple rule that we can apply to our
-profession: "Leave the campground cleaner than you found it". The boy-scout rule
+profession: "Leave the campground cleaner than you found it". The boy scout rule
 states that we should always leave the code cleaner than we found it.
 
 Why
 
 - When making changes to an existing codebase the code quality tends to degrade,
-  accumulating technical debt. Following the boyscout rule, we should mind the
+  accumulating technical debt. Following the boy scout rule, we should mind the
   quality with each commit. Technical debt is resisted by continuous
   refactoring, no matter how small.
 
@@ -255,31 +257,12 @@ Resources
 
 - [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
 
-## FIRST principles of testing
-
-The FIRST testing principles mean that tests should be fast, isolated,
-repeatable, self-validating and timely.
-
-Resources
-
-- [F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html)
-
-## Arrange, Act, Assert
-
-The 3A's are a pattern to arrange and format code in unit tests. _Arrange_ all
-necessary preconditions and inputs. _Act_ on the object or method under test.
-_Assert_ that the expected results have occurred.
-
-Resources
-
-- [Arrange Act Assert](https://wiki.c2.com/?ArrangeActAssert)
-- [3A - Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/)
-
 ## Minimise Coupling
 
-Coupling between modules/components is their degree of mutual interdependence;
-lower coupling is better. In other words, coupling is the probability that code
-unit "B" will "break" after an unknown change to code unit "A".
+Coupling between modules or components is their degree of mutual
+interdependence; lower coupling is better. In other words, coupling is the
+probability that code unit "B" will "break" after an unknown change to code unit
+"A".
 
 Why
 
@@ -328,20 +311,29 @@ Resources
 
 ## Composition Over Inheritance
 
+It is better to compose what an object can do than extend what it is. Compose
+when there is a "has a" (or "uses a") relationship, inherit when "is a".
+
 Why
 
 - Less coupling between classes.
-- Using inheritance, subclasses easily make assumptions, and break LSP.
+- Using inheritance, subclasses easily make assumptions, and break [LSP](#lsp).
+- Increase flexibility: accommodate future requirements changes, otherwise
+  requiring restructuring of business-domain classes in the inheritance model.
+- Avoid problems often associated with relatively minor changes to an
+  inheritance-based model including several generations of classes.
 
 How
 
-- Test for LSP (substitutability) to decide when to inherit.
-- Compose when there is a "has a" (or "uses a") relationship, inherit when "is
-  a".
+- Identify system object behaviors in separate interfaces, instead of creating a
+  hierarchical relationship to distribute behaviors among business-domain
+  classes via inheritance.
+- Test for [LSP](#lsp) to decide when to inherit.
 
 Resources
 
-- [Favor Composition Over Inheritance](https://blogs.msdn.microsoft.com/thalesc/2012/09/05/favor-composition-over-inheritance/)
+- [Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
+- [Favor Composition Over Inheritance](https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance)
 
 ## Orthogonality
 
@@ -370,16 +362,14 @@ ignoring the data it does not recognize.
 
 Why
 
-- In order to be able to evolve services you need to ensure that a provider can
-  make changes to support new demands while causing minimal breakage to their
-  existing clients.
+- Ensure that a provider can make changes to support new demands, while causing
+  minimal breakage to their existing clients.
 
 How
 
-- Code that sends commands or data to other machines (or to other programs on
-  the same machine) should conform completely to the specifications, but code
-  that receives input should accept non-conformant input as long as the meaning
-  is clear.
+- Code that sends commands or data to other programs or machines should conform
+  completely to the specifications, but code that receives input should accept
+  non-conformant input as long as the meaning is clear.
 
 Resources
 
@@ -388,21 +378,20 @@ Resources
 
 ## Inversion of Control
 
-Inversion of Control is also known as the Hollywood Principle, "Don't call us,
-we'll call you". It is a design principle in which custom-written portions of a
-computer program receive the flow of control from a generic framework. Inversion
-of control carries the strong connotation that the reusable code and the
+IoC inverts the flow of control. It's also known as the Hollywood Principle,
+"Don't call us, we'll call you". A design principle in which custom-written
+portions of a computer program receive the flow of control from a generic
+framework. It carries the strong connotation that the reusable code and the
 problem-specific code are developed independently even though they operate
 together in an application.
 
 Why
 
-- Inversion of control is used to increase modularity of the program and make it
-  extensible.
+- Increase modularity of the program and make it extensible.
 - To decouple the execution of a task from implementation.
 - To focus a module on the task it is designed for.
-- To free modules from assumptions about how other systems do what they do and
-  instead rely on contracts.
+- To free modules from assumptions about other systems and instead rely on
+  contracts.
 - To prevent side effects when replacing a module.
 
 How
@@ -421,22 +410,23 @@ Resources
 
 ## Maximise Cohesion
 
-Cohesion of a single module/component is the degree to which its
-responsibilities form a meaningful unit; higher cohesion is better.
+Cohesion of a single module or component is the degree to which its
+responsibilities form a meaningful unit. Higher cohesion is better.
 
 Why
 
-- Increased difficulty in understanding modules.
-- Increased difficulty in maintaining a system, because logical changes in the
-  domain affect multiple modules, and because changes in one module require
-  changes in related modules.
-- Increased difficulty in reusing a module because most applications won’t need
-  the random set of operations provided by a module.
+- Reduced module complexity
+- Increased system maintainability, because logical changes in the domain affect
+  fewer modules, and because changes in one module require fewer changes in
+  other modules.
+- Increased module reusability, because application developers will find the
+  component they need more easily among the cohesive set of operations provided
+  by the module.
 
 How
 
 - Group related functionalities sharing a single responsibility (e.g. in a
-  class).
+  module or class).
 
 Resources
 
@@ -450,6 +440,8 @@ The LSP is all about expected behavior of objects:
 > Objects in a program should be replaceable with instances of their subtypes
 > without altering the correctness of that program.
 
+**LSP** is the L in [SOLID](#solid).
+
 Resources
 
 - [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
@@ -458,8 +450,10 @@ Resources
 ## Open/Closed Principle
 
 Software entities (e.g. classes) should be open for extension, but closed for
-modification. I.e. such an entity can allow its behavior to be modified without
+modification. Such an entity can allow its behavior to be modified, without
 altering its source code.
+
+**Open/Closed** is the O in [SOLID](#solid).
 
 Why
 
@@ -484,6 +478,8 @@ Long version: Every class should have a single responsibility, and that
 responsibility should be entirely encapsulated by the class. Responsibility can
 be defined as a reason to change, so a class or module should have one, and only
 one, reason to change.
+
+**SRP** is the S in [SOLID](#solid).
 
 Why
 
@@ -529,17 +525,17 @@ bit of code: Do One Thing.
 ## Encapsulate What Changes
 
 A good design identifies the hotspots that are most likely to change and
-encapsulates them behind an API. When an anticipated change then occurs, the
-modifications are kept local.
+encapsulates them behind an interface. When an anticipated change then occurs,
+the modifications are kept local.
 
 Why
 
-- To minimize required modifications when a change occurs
+- To minimize required modifications when a change occurs.
 
 How
 
-- Encapsulate the concept that varies behind an API
-- Possibly separate the varying concept into its own module
+- Encapsulate the concept that varies behind an interface.
+- Possibly separate the varying concept into its own module.
 
 Resources
 
@@ -553,12 +549,11 @@ Reduce fat interfaces into multiple smaller and more specific client specific
 interfaces. An interface should be more dependent on the code that calls it than
 the code that implements it.
 
+**ISP** is the I in [SOLID](#solid).
+
 Why
 
-- If a class implements methods that are not needed the caller needs to know
-  about the method implementation of that class. For example if a class
-  implements a method but simply throws then the caller will need to know that
-  this method shouldn't actually be called.
+- Keep a system decoupled and thus easier to refactor, change, and redeploy.
 
 How
 
@@ -573,8 +568,8 @@ Resources
 ## Command Query Separation
 
 The Command Query Separation principle states that each method should be either
-a command that performs an action or a query that returns data to the caller but
-not both. Asking a question should not modify the answer.
+a command that performs an action, or a query that returns data to the caller
+but not both. Asking a question should not modify the answer.
 
 With this principle applied the programmer can code with much more confidence.
 The query methods can be used anywhere and in any order since they do not mutate
@@ -596,3 +591,33 @@ Resources
 
 - [Command Query Separation in Wikipedia](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
 - [Command Query Separation by Martin Fowler](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+
+## SOLID
+
+A subset of programming principles:
+
+- [Single Responsibility Principle](#single-responsibility-principle)
+- [Open/Closed Principle](#openclosed-principle)
+- [Liskov Substitution Principle](#liskov-substitution-principle)
+- [Interface Segregation Principle](#interface-segregation-principle)
+- Dependency Inversion Principle
+
+## FIRST principles of testing
+
+The FIRST testing principles mean that tests should be Fast, Isolated,
+Repeatable, Self-validating and Timely.
+
+Resources
+
+- [F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html)
+
+## Arrange, Act, Assert
+
+The 3A's are a pattern to arrange and format code in unit tests. _Arrange_ all
+necessary preconditions and inputs. _Act_ on the object or method under test.
+_Assert_ that the expected results have occurred.
+
+Resources
+
+- [Arrange Act Assert](https://wiki.c2.com/?ArrangeActAssert)
+- [3A - Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/)
