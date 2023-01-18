@@ -27,7 +27,7 @@ have any feedback or suggestions for improvement!
 - [Avoid Premature Optimization](#avoid-premature-optimization)
 - [Boy-Scout Rule](#boy-scout-rule)
 
-### Inter-Module/Class
+### Relationships between modules, classes, components, entities
 
 - [Connascence](#connascence)
 - [Minimise Coupling](#minimise-coupling)
@@ -37,7 +37,7 @@ have any feedback or suggestions for improvement!
 - [Robustness Principle](#robustness-principle)
 - [Inversion of Control](#inversion-of-control)
 
-### Module/Class
+### Modules, classes, components, entities
 
 - [Maximise Cohesion](#maximise-cohesion)
 - [Liskov Substitution Principle](#liskov-substitution-principle)
@@ -69,8 +69,8 @@ Why
 
 Resources
 
-- [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)
-- [Keep It Simple Stupid (KISS)](http://principles-wiki.net/principles:keep_it_simple_stupid)
+- [KISS principle (wikipedia.org)](https://en.wikipedia.org/wiki/KISS_principle)
+- [Keep It Simple Stupid (KISS) (principles-wiki.net)](http://principles-wiki.net/principles:keep_it_simple_stupid)
 
 ## YAGNI
 
@@ -89,9 +89,9 @@ How
 
 Resources
 
-- [You Arent Gonna Need It](http://c2.com/xp/YouArentGonnaNeedIt.html)
-- [You’re NOT gonna need it!](https://ronjeffries.com/xprog/articles/practices/pracnotneed/)
-- [You aren't gonna need it](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+- [You Arent Gonna Need It (wiki.c2.com)](http://c2.com/xp/YouArentGonnaNeedIt.html)
+- [You’re NOT gonna need it! (ronjeffries.com)](https://ronjeffries.com/xprog/articles/practices/pracnotneed/)
+- [You aren't gonna need it (wikipedia.org)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
 ## Do The Simplest Thing That Could Possibly Work
 
@@ -106,7 +106,7 @@ How
 
 Resources
 
-- [Do The Simplest Thing That Could Possibly Work](http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html)
+- [Do The Simplest Thing That Could Possibly Work (wiki.c2.com)](http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html)
 
 ## Separation of Concerns
 
@@ -139,7 +139,7 @@ How
 
 Resources
 
-- [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+- [Separation of Concerns (wikipedia.org)](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 ## Keep things DRY
 
@@ -172,19 +172,19 @@ How
 
 Resources
 
-- [Dont Repeat Yourself](http://wiki.c2.com/?DontRepeatYourself)
-- [Don't repeat yourself](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
-- [DRY Principle: Its Benefit and Cost with Examples](https://thevaluable.dev/dry-principle-cost-benefit-example/)
+- [Dont Repeat Yourself (wiki.c2.com)](http://wiki.c2.com/?DontRepeatYourself)
+- [Don't repeat yourself (wikipedia.org)](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
+- [DRY Principle: Its Benefit and Cost with Examples (thevaluable.dev)](https://thevaluable.dev/dry-principle-cost-benefit-example/)
 
 Related
 
-- [Abstraction principle](<https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)>)
-- [Once And Only Once](http://wiki.c2.com/?OnceAndOnlyOnce) is a subset of DRY
-  (also referred to as the goal of refactoring).
-- [Single Source of Truth](https://en.wikipedia.org/wiki/Single_Source_of_Truth)
+- [Abstraction principle (wikipedia.org)](<https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)>)
+- [Once And Only Once (wiki.c2.com)](http://wiki.c2.com/?OnceAndOnlyOnce) is a
+  subset of DRY (also referred to as the goal of refactoring).
+- [Single Source of Truth (wikipedia.org)](https://en.wikipedia.org/wiki/Single_Source_of_Truth)
 - A violation of DRY is [WET](http://thedailywtf.com/articles/The-WET-Cart)
   (Write Everything Twice)
-- [Be careful with the code metric "duplicated lines"](https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html)
+- [Be careful with the code metric "duplicated lines" (rachelcarmena.github.io)](https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html)
 
 ## Code For The Maintainer
 
@@ -205,8 +205,8 @@ How
 
 Resources
 
-- [Code For The Maintainer](http://wiki.c2.com/?CodeForTheMaintainer)
-- [The Noble Art of Maintenance Programming](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)
+- [Code For The Maintainer (wiki.c2.com)](http://wiki.c2.com/?CodeForTheMaintainer)
+- [The Noble Art of Maintenance Programming (blog.codinghorror.com)](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)
 
 ## Avoid Premature Optimization
 
@@ -228,14 +228,14 @@ Why
 
 How
 
-- [Make It Work Make It Right Make It Fast](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast)
+- [Make It Work Make It Right Make It Fast (wiki.c2.com)](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast)
 - Don't optimize until you need to, and only after profiling you discover a
   bottleneck to optimise.
 
 Resources
 
-- [Program optimization](https://en.wikipedia.org/wiki/Program_optimization)
-- [Premature Optimization](http://wiki.c2.com/?PrematureOptimization)
+- [Program optimization (wikipedia.org)](https://en.wikipedia.org/wiki/Program_optimization)
+- [Premature Optimization (wiki.c2.com)](http://wiki.c2.com/?PrematureOptimization)
 
 ## Boy Scout Rule
 
@@ -258,7 +258,7 @@ How
 
 Resources
 
-- [Opportunistic Refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
+- [Opportunistic Refactoring (martinfowler.com)](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
 
 ## Connascence
 
@@ -310,8 +310,8 @@ How
 
 Resources
 
-- [Coupling](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>)
-- [Coupling And Cohesion](http://wiki.c2.com/?CouplingAndCohesion)
+- [Coupling (wikipedia.org)](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>)
+- [Coupling And Cohesion (wiki.c2.com)](http://wiki.c2.com/?CouplingAndCohesion)
 
 ## Law of Demeter
 
@@ -333,8 +333,8 @@ A method of an object may only call methods of:
 
 Resources
 
-- [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)
-- [The Law of Demeter Is Not A Dot Counting Exercise](https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/)
+- [Law of Demeter (wikipedia.org)](https://en.wikipedia.org/wiki/Law_of_Demeter)
+- [The Law of Demeter Is Not A Dot Counting Exercise (haacked.com)](https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/)
 
 ## Composition Over Inheritance
 
@@ -359,8 +359,8 @@ How
 
 Resources
 
-- [Composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
-- [Favor Composition Over Inheritance](https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance)
+- [Composition over inheritance (wikipedia.org)](https://en.wikipedia.org/wiki/Composition_over_inheritance)
+- [Favor Composition Over Inheritance (docs.microsoft.com)](https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance)
 
 ## Orthogonality
 
@@ -375,7 +375,7 @@ Source: [Be Orthogonal](https://www.artima.com/intv/dry3.html)
 > context; the key parameters are symmetry and consistency.
 
 Source:
-[Orthogonality](<https://en.wikipedia.org/wiki/Orthogonality_(programming)>)
+[Orthogonality (wikipedia.org)](<https://en.wikipedia.org/wiki/Orthogonality_(programming)>)
 
 ## Robustness Principle
 
@@ -400,8 +400,8 @@ How
 
 Resources
 
-- [Robustness Principle in Wikipedia](https://en.wikipedia.org/wiki/Robustness_principle)
-- [Tolerant Reader](https://martinfowler.com/bliki/TolerantReader.html)
+- [Robustness Principle (wikipedia.org)](https://en.wikipedia.org/wiki/Robustness_principle)
+- [Tolerant Reader (martinfowler.com)](https://martinfowler.com/bliki/TolerantReader.html)
 
 ## Inversion of Control
 
@@ -432,8 +432,8 @@ How
 
 Resources
 
-- [Inversion of Control in Wikipedia](https://en.wikipedia.org/wiki/Inversion_of_control)
-- [Inversion of Control Containers and the Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html)
+- [Inversion of Control (wikipedia.org)](https://en.wikipedia.org/wiki/Inversion_of_control)
+- [Inversion of Control Containers and the Dependency Injection pattern (martinfowler.com)](https://www.martinfowler.com/articles/injection.html)
 
 ## Maximise Cohesion
 
@@ -457,8 +457,8 @@ How
 
 Resources
 
-- [Cohesion](<https://en.wikipedia.org/wiki/Cohesion_(computer_science)>)
-- [Coupling And Cohesion](http://wiki.c2.com/?CouplingAndCohesion)
+- [Cohesion (wikipedia.org)](<https://en.wikipedia.org/wiki/Cohesion_(computer_science)>)
+- [Coupling And Cohesion (wiki.c2.com)](http://wiki.c2.com/?CouplingAndCohesion)
 
 ## Liskov Substitution Principle
 
@@ -471,8 +471,8 @@ The LSP is all about expected behavior of objects:
 
 Resources
 
-- [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
-- [Liskov Substitution Principle](http://www.blackwasp.co.uk/lsp.aspx)
+- [Liskov substitution principle (wikipedia.org)](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
+- [Liskov Substitution Principle (blackwasp.co.uk)](http://www.blackwasp.co.uk/lsp.aspx)
 
 ## Open/Closed Principle
 
@@ -494,8 +494,8 @@ How
 
 Resources
 
-- [Open Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
-- [The Open Closed Principle](https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)
+- [Open Closed Principle (wikipedia.org)](https://en.wikipedia.org/wiki/Open/closed_principle)
+- [The Open Closed Principle (blog.cleancoder.com)](https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)
 
 ## Single Responsibility Principle
 
@@ -518,7 +518,7 @@ How
 
 Resources
 
-- [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+- [Single responsibility principle (wikipedia.org)](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 
 ## Hide Implementation Details
 
@@ -539,15 +539,15 @@ How
 
 Resources
 
-- [Information hiding](https://en.wikipedia.org/wiki/Information_hiding)
+- [Information hiding (wikipedia.org)](https://en.wikipedia.org/wiki/Information_hiding)
 
 ## Curly's Law
 
 Curly's Law is about choosing a single, clearly defined goal for any particular
 bit of code: Do One Thing.
 
-- [Curly's Law: Do One Thing](https://blog.codinghorror.com/curlys-law-do-one-thing/)
-- [The Rule of One or Curly’s Law](http://grsmentor.com/blog/the-rule-of-one-or-curlys-law/)
+- [Curly's Law: Do One Thing (blog.codinghorror.com)](https://blog.codinghorror.com/curlys-law-do-one-thing/)
+- [The Rule of One or Curly’s Law (grsmentor.com)](http://grsmentor.com/blog/the-rule-of-one-or-curlys-law/)
 
 ## Encapsulate What Changes
 
@@ -566,9 +566,9 @@ How
 
 Resources
 
-- [Encapsulate the Concept that Varies](http://principles-wiki.net/principles:encapsulate_the_concept_that_varies)
-- [Encapsulate What Varies](https://blogs.msdn.microsoft.com/steverowe/2007/12/26/encapsulate-what-varies/)
-- [Information hiding](https://en.wikipedia.org/wiki/Information_hiding)
+- [Encapsulate the Concept that Varies (principles-wiki.net)](http://principles-wiki.net/principles:encapsulate_the_concept_that_varies)
+- [Encapsulate What Varies (blogs.msdn.microsoft.com)](https://blogs.msdn.microsoft.com/steverowe/2007/12/26/encapsulate-what-varies/)
+- [Information hiding (wikipedia.org)](https://en.wikipedia.org/wiki/Information_hiding)
 
 ## Interface Segregation Principle
 
@@ -590,7 +590,7 @@ How
 
 Resources
 
-- [Interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
+- [Interface segregation principle (wikipedia.org)](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 
 ## Command Query Separation
 
@@ -616,8 +616,8 @@ How
 
 Resources
 
-- [Command Query Separation in Wikipedia](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
-- [Command Query Separation by Martin Fowler](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+- [Command Query Separation (wikipedia.org)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
+- [Command Query Separation (martinfowler.com)](https://martinfowler.com/bliki/CommandQuerySeparation.html)
 
 ## SOLID
 
@@ -646,5 +646,5 @@ _Assert_ that the expected results have occurred.
 
 Resources
 
-- [Arrange Act Assert](https://wiki.c2.com/?ArrangeActAssert)
-- [3A - Arrange, Act, Assert](https://xp123.com/articles/3a-arrange-act-assert/)
+- [Arrange Act Assert (wiki.c2.com)](https://wiki.c2.com/?ArrangeActAssert)
+- [3A - Arrange, Act, Assert (xp123.com)](https://xp123.com/articles/3a-arrange-act-assert/)
