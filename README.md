@@ -24,6 +24,7 @@ have any feedback or suggestions for improvement!
 - [Separation of Concerns](#separation-of-concerns)
 - [Code For The Maintainer](#code-for-the-maintainer)
 - [Avoid Premature Optimization](#avoid-premature-optimization)
+- [Optimize for Deletion](#optimize-for-deletion)
 - [Keep things DRY](#keep-things-dry)
 - [Boy Scout Rule](#boy-scout-rule)
 
@@ -191,6 +192,30 @@ Resources
 
 - [Program optimization (wikipedia.org)](https://en.wikipedia.org/wiki/Program_optimization)
 - [Premature Optimization (wiki.c2.com)](http://wiki.c2.com/?PrematureOptimization)
+
+## Optimize for Deletion
+
+Why
+
+Code should be optimized for change. Code that's easy to delete is easy to
+replace or change.
+
+How
+
+Don't try to predict future changes today, instead focus on deletable and
+rewriteable code.
+
+Principles such as [separation of concerns](#separation-of-concerns),
+[low coupling](#minimise-coupling) and the
+[Single Responsibility Principle](#single-responsibility-principle) result in
+increased deletability. In general, high modularity helps to increase
+deletability of individual parts.
+
+Resources
+
+- [The art of destroying software (youtube.com](https://www.youtube.com/watch?v=Ed94CfxgsCA)
+- [Optimize for Deletion (work.stevegrossi.com)](https://work.stevegrossi.com/2016/11/04/optimize-for-deletion/)
+- [Deletability (kellysutton.com)](https://kellysutton.com/2017/05/29/deletability.html)
 
 ## Keep things DRY
 
