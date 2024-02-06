@@ -539,7 +539,7 @@ Why
 
 How
 
-- Apply [Curly's Law](#Curly-s-Law).
+- Apply [Curly's Law](#curlys-Law).
 
 Resources
 
