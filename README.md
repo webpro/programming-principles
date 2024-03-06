@@ -644,6 +644,34 @@ Resources
 - [Command Query Separation (wikipedia.org)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
 - [Command Query Separation (martinfowler.com)](https://martinfowler.com/bliki/CommandQuerySeparation.html)
 
+## Dependency Inversion Principle
+
+Dependency Injection is an Inversion of Control technique for supplying objects (“dependencies”) to a class by a way of
+the Dependency Injection Design Pattern. Typically passing dependencies via constructor or field. In contrast the
+Dependency Inversion Principle is a general design guideline which recommends that classes should only have direct
+relationships with high-level abstractions. This means that classes should not depend on low-level details, emphasizing
+the use of interfaces and abstract classes.
+
+Why
+
+- By decoupling the high-level modules from the low-level modules, the high-level modules become more reusable and
+  maintainable.
+- Facilitates unit testing by allowing the use of mock objects, enabling isolated testing of modules.
+- Reduces the risk of breaking the system when changes are made.
+- Allows to add new implementations without changing the existing code, enhancing the system's extensibility.
+
+How
+
+- Define interfaces to capture behavior and use them to define the dependencies of a class.
+- Depends on abstractions, not on concretions.
+- Using patterns like Factory, Service Locator, and Dependency Injection.
+- Use the [Inversion of Control](#inversion-of-control) principle.
+
+Resources
+
+- [SOLID — Dependency Inversion Principle](https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e)
+- [Dependency Injection (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_injection)
+
 ## SOLID
 
 A subset of programming principles:
@@ -652,7 +680,7 @@ A subset of programming principles:
 - [Open/Closed Principle](#openclosed-principle)
 - [Liskov Substitution Principle](#liskov-substitution-principle)
 - [Interface Segregation Principle](#interface-segregation-principle)
-- Dependency Inversion Principle
+- [Dependency Inversion Principle](#Dependency-Inversion-Principle)
 
 ## FIRST principles of testing
 
