@@ -646,11 +646,10 @@ Resources
 
 ## Dependency Inversion Principle
 
-Dependency Injection is an Inversion of Control technique for supplying objects (“dependencies”) to a class by a way of
-the Dependency Injection Design Pattern. Typically passing dependencies via constructor or field. In contrast the
-Dependency Inversion Principle is a general design guideline which recommends that classes should only have direct
-relationships with high-level abstractions. This means that classes should not depend on low-level details, emphasizing
-the use of interfaces and abstract classes.
+Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes rather than upon
+concrete functions and classes.
+Simply put, when components of our system have dependencies, we don’t want directly inject a component’s dependency into
+another. Instead, we should use a level of abstraction between them.
 
 Why
 
@@ -659,6 +658,7 @@ Why
 - Facilitates unit testing by allowing the use of mock objects, enabling isolated testing of modules.
 - Reduces the risk of breaking the system when changes are made.
 - Allows to add new implementations without changing the existing code, enhancing the system's extensibility.
+- Concrete classes change frequently, while abstractions and interfaces change much less.
 
 How
 
@@ -670,8 +670,8 @@ How
 Resources
 
 - [SOLID — Dependency Inversion Principle](https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e)
-- [Dependency Injection (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_injection)
-
+- [DDependency inversion principle (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
+- [System Design: Dependency Inversion Principle](https://www.baeldung.com/cs/dip)
 ## SOLID
 
 A subset of programming principles:
