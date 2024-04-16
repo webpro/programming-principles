@@ -49,6 +49,7 @@ have any feedback or suggestions for improvement!
 - [Encapsulate What Changes](#encapsulate-what-changes)
 - [Interface Segregation Principle](#interface-segregation-principle)
 - [Command Query Separation](#command-query-separation)
+- [Dependency Inversion Principle](#dependency-inversion-principle)
 - [SOLID](#solid)
 
 ### Test
@@ -646,23 +647,28 @@ Resources
 
 ## Dependency Inversion Principle
 
-Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes rather than upon
-concrete functions and classes.
-Simply put, when components of our system have dependencies, we don’t want directly inject a component’s dependency into
-another. Instead, we should use a level of abstraction between them.
+Dependency Inversion is the strategy of depending upon interfaces or abstract
+functions and classes rather than upon concrete functions and classes.
+Simply put, when components of our system have dependencies, we don’t want to
+directly inject a component’s dependency into another. Instead, we should use a
+level of abstraction between them.
 
 Why
 
-- By decoupling the high-level modules from the low-level modules, the high-level modules become more reusable and
-  maintainable.
-- Facilitates unit testing by allowing the use of mock objects, enabling isolated testing of modules.
+- By decoupling the high-level modules from the low-level modules, the
+  high-level modules become more reusable and maintainable.
+- Facilitates unit testing by allowing the use of mock objects, enabling
+  isolated testing of modules.
 - Reduces the risk of breaking the system when changes are made.
-- Allows to add new implementations without changing the existing code, enhancing the system's extensibility.
-- Concrete classes change frequently, while abstractions and interfaces change much less.
+- Allows adding new implementations without changing the existing code,
+  enhancing the system's extensibility.
+- Concrete classes change frequently, while abstractions and interfaces change
+  much less.
 
 How
 
-- Define interfaces to capture behavior and use them to define the dependencies of a class.
+- Define interfaces to capture behavior and use them to define the dependencies
+  of a class.
 - Depends on abstractions, not on concretions.
 - Using patterns like Factory, Service Locator, and Dependency Injection.
 - Use the [Inversion of Control](#inversion-of-control) principle.
@@ -670,8 +676,9 @@ How
 Resources
 
 - [SOLID — Dependency Inversion Principle](https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e)
-- [DDependency inversion principle (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
+- [Dependency inversion principle (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
 - [System Design: Dependency Inversion Principle](https://www.baeldung.com/cs/dip)
+
 ## SOLID
 
 A subset of programming principles:
