@@ -653,6 +653,8 @@ Simply put, when components of our system have dependencies, we don’t want to
 directly inject a component’s dependency into another. Instead, we should use a
 level of abstraction between them.
 
+**DIP** is the D in [SOLID](#solid).
+
 Why
 
 - By decoupling the high-level modules from the low-level modules, the
