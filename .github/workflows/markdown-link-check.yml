@@ -3,7 +3,7 @@ name: Check Markdown links
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     # Run every Tuesday at 3:00 AM (See https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)
     - cron: "0 3 * * 2"
