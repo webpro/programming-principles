@@ -1,3 +1,11 @@
 {
-  "aliveStatusCodes": [0, 200]
+  "aliveStatusCodes": [0, 200],
+  "httpHeaders": [
+    {
+      "urls": ["http"],
+      "headers": {
+        "User-Agent": "Chrome/124.0.0.0"
+      }
+    }
+  ]
 }
