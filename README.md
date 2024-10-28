@@ -49,8 +49,8 @@ have any feedback or suggestions for improvement!
   - [Single Responsibility Principle](#single-responsibility-principle)
   - [Open/Closed Principle](#openclosed-principle)
   - [Liskov Substitution Principle](#liskov-substitution-principle)
-  - [Dependency Inversion Principle](#dependency-inversion-principle)
   - [Interface Segregation Principle](#interface-segregation-principle)
+  - [Dependency Inversion Principle](#dependency-inversion-principle)
 
 ### Test
 
