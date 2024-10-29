@@ -498,7 +498,7 @@ The LSP is all about expected behavior of objects:
 Resources
 
 - [Liskov substitution principle (wikipedia.org)](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
-- [Liskov Substitution Principle (blackwasp.co.uk)](http://www.blackwasp.co.uk/lsp.aspx)
+- [The Liskov Substitution Principle Explained (reflectoring.io)](https://reflectoring.io/lsp-explained/)
 
 ## Open/Closed Principle
 
