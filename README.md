@@ -73,6 +73,9 @@ Resources
 
 - [KISS principle (wikipedia.org)](https://en.wikipedia.org/wiki/KISS_principle)
 - [Keep It Simple Stupid (KISS) (principles-wiki.net)](http://principles-wiki.net/principles:keep_it_simple_stupid)
+- [Cognitive Load is what matters (github.com)](https://github.com/zakirullin/cognitive-load)
+- [The Limits of Human Cognitive Capacities in Programming and Their Impact on Code Readability (florian-kraemer.net)](https://florian-kraemer.net/software-architecture/2024/07/25/The-Limits-of-Human-Cognitive-Capacities-in-Programming.html)
+- [Simplicity is An Advantage but Sadly Complexity Sells Better (eugeneyan.com)](https://eugeneyan.com/writing/simplicity/)
 
 ## YAGNI
 
