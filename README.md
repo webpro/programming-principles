@@ -59,8 +59,8 @@ have any feedback or suggestions for improvement!
 
 ## KISS
 
-**Keep It Simple, Stupid**: most systems work best if they are kept simple
-rather than made complex.
+**Keep It Simple, Stupid**: most systems work and are understood better if they
+are kept simple rather than made complex.
 
 Why
 
@@ -652,10 +652,10 @@ Resources
 ## Dependency Inversion Principle
 
 Dependency Inversion is the strategy of depending upon interfaces or abstract
-functions and classes rather than upon concrete functions and classes.
-Simply put, when components of our system have dependencies, we don’t want to
-directly inject a component’s dependency into another. Instead, we should use a
-level of abstraction between them.
+functions and classes rather than upon concrete functions and classes. Simply
+put, when components of our system have dependencies, we don’t want to directly
+inject a component’s dependency into another. Instead, we should use a level of
+abstraction between them.
 
 **DIP** is the D in [SOLID](#solid).
 
@@ -693,7 +693,7 @@ A subset of programming principles:
 - [Open/Closed Principle](#openclosed-principle)
 - [Liskov Substitution Principle](#liskov-substitution-principle)
 - [Interface Segregation Principle](#interface-segregation-principle)
-- [Dependency Inversion Principle](#Dependency-Inversion-Principle)
+- [Dependency Inversion Principle](#dependency-inversion-principle)
 
 ## FIRST principles of testing
 
