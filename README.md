@@ -220,6 +220,7 @@ Resources
 - [The art of destroying software (youtube.com](https://www.youtube.com/watch?v=Ed94CfxgsCA)
 - [Optimize for Deletion (work.stevegrossi.com)](https://work.stevegrossi.com/2016/11/04/optimize-for-deletion/)
 - [Deletability (kellysutton.com)](https://kellysutton.com/2017/05/29/deletability.html)
+- [Write code that is easy to delete, not easy to extend.](https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
 
 ## Keep things DRY
 
