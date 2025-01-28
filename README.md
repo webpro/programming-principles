@@ -6,56 +6,52 @@ you during design, discussion, or review. The list is incomplete, and sometimes
 trade-offs need to be made between conflicting principles. However, higher
 ranked principles usually beat lower ranked ones.
 
-The list was inspired by <!-- markdown-link-check-disable-next-line -->
-[The Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
-(down?
-[Google's cache](https://webcache.googleusercontent.com/search?q=cache:KU51T8hZ-0kJ:https://www.artima.com/weblogs/viewpost.jsp%3Fthread%3D331531+&cd=1&hl=en&ct=clnk&gl=nl&client=pub-3911176865765226)).
-I've added a bit more reasoning, details, and links to further resources.
-[Let me know](https://github.com/webpro/programming-principles/issues) if you
-have any feedback or suggestions for improvement!
+The list was inspired by [The Principles of Good Programming][1]. I've added a
+bit more reasoning, details, and links to further resources. [Let me know][2] if
+you have any feedback or suggestions for improvement!
 
 ## Contents
 
 ### Generic
 
-- [KISS](#kiss)
-- [YAGNI](#yagni)
-- [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
-- [Separation of Concerns](#separation-of-concerns)
-- [Code For The Maintainer](#code-for-the-maintainer)
-- [Avoid Premature Optimization](#avoid-premature-optimization)
-- [Optimize for Deletion](#optimize-for-deletion)
-- [Keep things DRY](#keep-things-dry)
-- [Boy Scout Rule](#boy-scout-rule)
+- [KISS][3]
+- [YAGNI][4]
+- [Do The Simplest Thing That Could Possibly Work][5]
+- [Separation of Concerns][6]
+- [Code For The Maintainer][7]
+- [Avoid Premature Optimization][8]
+- [Optimize for Deletion][9]
+- [Keep things DRY][10]
+- [Boy Scout Rule][11]
 
 ### Relationships between modules, classes, components, entities
 
-- [Connascence](#connascence)
-- [Minimise Coupling](#minimise-coupling)
-- [Law of Demeter](#law-of-demeter)
-- [Composition Over Inheritance](#composition-over-inheritance)
-- [Orthogonality](#orthogonality)
-- [Robustness Principle](#robustness-principle)
-- [Inversion of Control](#inversion-of-control)
+- [Connascence][12]
+- [Minimise Coupling][13]
+- [Law of Demeter][14]
+- [Composition Over Inheritance][15]
+- [Orthogonality][16]
+- [Robustness Principle][17]
+- [Inversion of Control][18]
 
 ### Modules, classes, components, entities
 
-- [Maximise Cohesion](#maximise-cohesion)
-- [Liskov Substitution Principle](#liskov-substitution-principle)
-- [Open/Closed Principle](#openclosed-principle)
-- [Single Responsibility Principle](#single-responsibility-principle)
-- [Hide Implementation Details](#hide-implementation-details)
-- [Curly's Law](#curlys-law)
-- [Encapsulate What Changes](#encapsulate-what-changes)
-- [Interface Segregation Principle](#interface-segregation-principle)
-- [Command Query Separation](#command-query-separation)
-- [Dependency Inversion Principle](#dependency-inversion-principle)
-- [SOLID](#solid)
+- [Maximise Cohesion][19]
+- [Liskov Substitution Principle][20]
+- [Open/Closed Principle][21]
+- [Single Responsibility Principle][22]
+- [Hide Implementation Details][23]
+- [Curly's Law][24]
+- [Encapsulate What Changes][25]
+- [Interface Segregation Principle][26]
+- [Command Query Separation][27]
+- [Dependency Inversion Principle][28]
+- [SOLID][29]
 
 ### Test
 
-- [FIRST principles of testing](#first-principles-of-testing)
-- [Arrange, Act, Assert](#arrange-act-assert)
+- [FIRST principles of testing][30]
+- [Arrange, Act, Assert][31]
 
 ## KISS
 
@@ -71,11 +67,13 @@ Why
 
 Resources
 
-- [KISS principle (wikipedia.org)](https://en.wikipedia.org/wiki/KISS_principle)
-- [Keep It Simple Stupid (KISS) (principles-wiki.net)](http://principles-wiki.net/principles:keep_it_simple_stupid)
-- [Cognitive Load is what matters (github.com)](https://github.com/zakirullin/cognitive-load)
-- [The Limits of Human Cognitive Capacities in Programming and Their Impact on Code Readability (florian-kraemer.net)](https://florian-kraemer.net/software-architecture/2024/07/25/The-Limits-of-Human-Cognitive-Capacities-in-Programming.html)
-- [Simplicity is An Advantage but Sadly Complexity Sells Better (eugeneyan.com)](https://eugeneyan.com/writing/simplicity/)
+- [KISS principle (wikipedia.org)][32]
+- [Keep It Simple Stupid (KISS) (principles-wiki.net)][33]
+- [Cognitive Load is what matters (github.com)][34]
+- [The Limits of Human Cognitive Capacities in Programming and Their Impact on
+  Code Readability (florian-kraemer.net)][35]
+- [Simplicity is An Advantage but Sadly Complexity Sells Better
+  (eugeneyan.com)][36]
 
 ## YAGNI
 
@@ -94,9 +92,9 @@ How
 
 Resources
 
-- [You Arent Gonna Need It (wiki.c2.com)](http://c2.com/xp/YouArentGonnaNeedIt.html)
-- [You’re NOT gonna need it! (ronjeffries.com)](https://ronjeffries.com/xprog/articles/practices/pracnotneed/)
-- [You aren't gonna need it (wikipedia.org)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+- [You Arent Gonna Need It (wiki.c2.com)][37]
+- [You’re NOT gonna need it! (ronjeffries.com)][38]
+- [You aren't gonna need it (wikipedia.org)][39]
 
 ## Do The Simplest Thing That Could Possibly Work
 
@@ -111,7 +109,7 @@ How
 
 Resources
 
-- [Do The Simplest Thing That Could Possibly Work (wiki.c2.com)](http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html)
+- [Do The Simplest Thing That Could Possibly Work (wiki.c2.com)][40]
 
 ## Separation of Concerns
 
@@ -121,8 +119,7 @@ example, the business logic and the user interface of an application are
 separate concerns. Changing the user interface should not require changes to the
 business logic and vice versa.
 
-Quoting [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
-(1974):
+Quoting [Edsger W. Dijkstra][41] (1974):
 
 > It is what I sometimes have called "the separation of concerns", which, even
 > if not perfectly possible, is yet the only available technique for effective
@@ -144,7 +141,7 @@ How
 
 Resources
 
-- [Separation of Concerns (wikipedia.org)](https://en.wikipedia.org/wiki/Separation_of_concerns)
+- [Separation of Concerns (wikipedia.org)][42]
 
 ## Code For The Maintainer
 
@@ -159,18 +156,17 @@ How
   psychopath who knows where you live.
 - Always code and comment in such a way that if someone a few notches junior
   picks up the code, they will take pleasure in reading and learning from it.
-- [Don't make me think](http://www.sensible.com/dmmt.html).
-- Use the
-  [Principle of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment).
+- [Don't make me think][43].
+- Use the [Principle of Least Astonishment][44].
 
 Resources
 
-- [Code For The Maintainer (wiki.c2.com)](http://wiki.c2.com/?CodeForTheMaintainer)
-- [The Noble Art of Maintenance Programming (blog.codinghorror.com)](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)
+- [Code For The Maintainer (wiki.c2.com)][45]
+- [The Noble Art of Maintenance Programming (blog.codinghorror.com)][46]
 
 ## Avoid Premature Optimization
 
-Quoting [Donald Knuth](https://en.wikiquote.org/wiki/Donald_Knuth):
+Quoting [Donald Knuth][47]:
 
 > Programmers waste enormous amounts of time thinking about, or worrying about,
 > the speed of non-critical parts of their programs, and these attempts at
@@ -188,14 +184,14 @@ Why
 
 How
 
-- [Make It Work Make It Right Make It Fast (wiki.c2.com)](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast)
+- [Make It Work Make It Right Make It Fast (wiki.c2.com)][48]
 - Don't optimize until you need to, and only after profiling you discover a
   bottleneck to optimise.
 
 Resources
 
-- [Program optimization (wikipedia.org)](https://en.wikipedia.org/wiki/Program_optimization)
-- [Premature Optimization (wiki.c2.com)](http://wiki.c2.com/?PrematureOptimization)
+- [Program optimization (wikipedia.org)][49]
+- [Premature Optimization (wiki.c2.com)][50]
 
 ## Optimize for Deletion
 
@@ -209,18 +205,16 @@ How
 Don't try to predict future changes today, instead focus on deletable and
 rewriteable code.
 
-Principles such as [separation of concerns](#separation-of-concerns),
-[low coupling](#minimise-coupling) and the
-[Single Responsibility Principle](#single-responsibility-principle) result in
-increased deletability. In general, high modularity helps to increase
-deletability of individual parts.
+Principles such as [separation of concerns][6], [low coupling][13] and the
+[Single Responsibility Principle][22] result in increased deletability. In
+general, high modularity helps to increase deletability of individual parts.
 
 Resources
 
-- [The art of destroying software (youtube.com](https://www.youtube.com/watch?v=Ed94CfxgsCA)
-- [Optimize for Deletion (work.stevegrossi.com)](https://work.stevegrossi.com/2016/11/04/optimize-for-deletion/)
-- [Deletability (kellysutton.com)](https://kellysutton.com/2017/05/29/deletability.html)
-- [Write code that is easy to delete, not easy to extend.](https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
+- [The art of destroying software (youtube.com)][51]
+- [Optimize for Deletion (work.stevegrossi.com)][52]
+- [Deletability (kellysutton.com)][53]
+- [Write code that is easy to delete, not easy to extend.][54]
 
 ## Keep things DRY
 
@@ -248,24 +242,23 @@ How
 - Identify the single, definitive source of every piece of knowledge used in
   your system, and then use that source to generate applicable instances of that
   knowledge (code, documentation, tests, etc).
-- Apply the
-  [Rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>).
+- Apply the [Rule of three][55].
 
 Resources
 
-- [Dont Repeat Yourself (wiki.c2.com)](http://wiki.c2.com/?DontRepeatYourself)
-- [Don't repeat yourself (wikipedia.org)](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
-- [DRY Principle: Its Benefit and Cost with Examples (thevaluable.dev)](https://thevaluable.dev/dry-principle-cost-benefit-example/)
+- [Dont Repeat Yourself (wiki.c2.com)][56]
+- [Don't repeat yourself (wikipedia.org)][57]
+- [DRY Principle: Its Benefit and Cost with Examples (thevaluable.dev)][58]
 
 Related
 
-- [Abstraction principle (wikipedia.org)](<https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)>)
-- [Once And Only Once (wiki.c2.com)](http://wiki.c2.com/?OnceAndOnlyOnce) is a
-  subset of DRY (also referred to as the goal of refactoring).
-- [Single Source of Truth (wikipedia.org)](https://en.wikipedia.org/wiki/Single_Source_of_Truth)
-- A violation of DRY is [WET](http://thedailywtf.com/articles/The-WET-Cart)
-  (Write Everything Twice)
-- [Be careful with the code metric "duplicated lines" (rachelcarmena.github.io)](https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html)
+- [Abstraction principle (wikipedia.org)][59]
+- [Once And Only Once (wiki.c2.com)][60] is a subset of DRY (also referred to as
+  the goal of refactoring).
+- [Single Source of Truth (wikipedia.org)][61]
+- A violation of DRY is [WET][62] (Write Everything Twice)
+- [Be careful with the code metric "duplicated lines"
+  (rachelcarmena.github.io)][63]
 
 ## Boy Scout Rule
 
@@ -288,7 +281,7 @@ How
 
 Resources
 
-- [Opportunistic Refactoring (martinfowler.com)](https://martinfowler.com/bliki/OpportunisticRefactoring.html)
+- [Opportunistic Refactoring (martinfowler.com)][64]
 
 ## Connascence
 
@@ -311,8 +304,8 @@ How
 
 Resources
 
-- [Connascence (connascence.io)](https://connascence.io)
-- [Connascence (wikipedia.org)](https://en.wikipedia.org/wiki/Connascence)
+- [Connascence (connascence.io)][65]
+- [Connascence (wikipedia.org)][66]
 
 ## Minimise Coupling
 
@@ -336,12 +329,12 @@ How
 
 - Eliminate, minimise, and reduce complexity of necessary relationships.
 - By hiding implementation details, coupling is reduced.
-- Apply the [Law of Demeter](#law-of-demeter).
+- Apply the [Law of Demeter][14].
 
 Resources
 
-- [Coupling (wikipedia.org)](<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>)
-- [Coupling And Cohesion (wiki.c2.com)](http://wiki.c2.com/?CouplingAndCohesion)
+- [Coupling (wikipedia.org)][67]
+- [Coupling And Cohesion (wiki.c2.com)][68]
 
 ## Law of Demeter
 
@@ -357,14 +350,14 @@ How
 A method of an object may only call methods of:
 
 1. The object itself.
-1. An argument of the method.
-1. Any object created within the method.
-1. Any direct properties/fields of the object.
+2. An argument of the method.
+3. Any object created within the method.
+4. Any direct properties/fields of the object.
 
 Resources
 
-- [Law of Demeter (wikipedia.org)](https://en.wikipedia.org/wiki/Law_of_Demeter)
-- [The Law of Demeter Is Not A Dot Counting Exercise (haacked.com)](https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/)
+- [Law of Demeter (wikipedia.org)][69]
+- [The Law of Demeter Is Not A Dot Counting Exercise (haacked.com)][70]
 
 ## Composition Over Inheritance
 
@@ -374,7 +367,7 @@ when there is a "has a" (or "uses a") relationship, inherit when "is a".
 Why
 
 - Less coupling between classes.
-- Using inheritance, subclasses easily make assumptions, and break [LSP](#lsp).
+- Using inheritance, subclasses easily make assumptions, and break [LSP][71].
 - Increase flexibility: accommodate future requirements changes, otherwise
   requiring restructuring of business-domain classes in the inheritance model.
 - Avoid problems often associated with relatively minor changes to an
@@ -385,27 +378,26 @@ How
 - Identify system object behaviors in separate interfaces, instead of creating a
   hierarchical relationship to distribute behaviors among business-domain
   classes via inheritance.
-- Test for [LSP](#lsp) to decide when to inherit.
+- Test for [LSP][71] to decide when to inherit.
 
 Resources
 
-- [Composition over inheritance (wikipedia.org)](https://en.wikipedia.org/wiki/Composition_over_inheritance)
-- [Favor Composition Over Inheritance (docs.microsoft.com)](https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance)
+- [Composition over inheritance (wikipedia.org)][72]
+- [Favor Composition Over Inheritance (docs.microsoft.com)][73]
 
 ## Orthogonality
 
 > The basic idea of orthogonality is that things that are not related
 > conceptually should not be related in the system.
 
-Source: [Be Orthogonal](https://www.artima.com/intv/dry3.html)
+Source: [Be Orthogonal][74]
 
 > It is associated with simplicity; the more orthogonal the design, the fewer
 > exceptions. This makes it easier to learn, read and write programs in a
 > programming language. The meaning of an orthogonal feature is independent of
 > context; the key parameters are symmetry and consistency.
 
-Source:
-[Orthogonality (wikipedia.org)](<https://en.wikipedia.org/wiki/Orthogonality_(programming)>)
+Source: [Orthogonality (wikipedia.org)][75]
 
 ## Robustness Principle
 
@@ -430,8 +422,8 @@ How
 
 Resources
 
-- [Robustness Principle (wikipedia.org)](https://en.wikipedia.org/wiki/Robustness_principle)
-- [Tolerant Reader (martinfowler.com)](https://martinfowler.com/bliki/TolerantReader.html)
+- [Robustness Principle (wikipedia.org)][76]
+- [Tolerant Reader (martinfowler.com)][77]
 
 ## Inversion of Control
 
@@ -462,8 +454,9 @@ How
 
 Resources
 
-- [Inversion of Control (wikipedia.org)](https://en.wikipedia.org/wiki/Inversion_of_control)
-- [Inversion of Control Containers and the Dependency Injection pattern (martinfowler.com)](https://www.martinfowler.com/articles/injection.html)
+- [Inversion of Control (wikipedia.org)][78]
+- [Inversion of Control Containers and the Dependency Injection pattern
+  (martinfowler.com)][79]
 
 ## Maximise Cohesion
 
@@ -487,8 +480,8 @@ How
 
 Resources
 
-- [Cohesion (wikipedia.org)](<https://en.wikipedia.org/wiki/Cohesion_(computer_science)>)
-- [Coupling And Cohesion (wiki.c2.com)](http://wiki.c2.com/?CouplingAndCohesion)
+- [Cohesion (wikipedia.org)][80]
+- [Coupling And Cohesion (wiki.c2.com)][68]
 
 ## Liskov Substitution Principle
 
@@ -497,12 +490,12 @@ The LSP is all about expected behavior of objects:
 > Objects in a program should be replaceable with instances of their subtypes
 > without altering the correctness of that program.
 
-**LSP** is the L in [SOLID](#solid).
+**LSP** is the L in [SOLID][29].
 
 Resources
 
-- [Liskov substitution principle (wikipedia.org)](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
-- [The Liskov Substitution Principle Explained (reflectoring.io)](https://reflectoring.io/lsp-explained/)
+- [Liskov substitution principle (wikipedia.org)][81]
+- [The Liskov Substitution Principle Explained (reflectoring.io)][82]
 
 ## Open/Closed Principle
 
@@ -510,7 +503,7 @@ Software entities (e.g. classes) should be open for extension, but closed for
 modification. Such an entity can allow its behavior to be modified, without
 altering its source code.
 
-**Open/Closed** is the O in [SOLID](#solid).
+**Open/Closed** is the O in [SOLID][29].
 
 Why
 
@@ -524,8 +517,8 @@ How
 
 Resources
 
-- [Open Closed Principle (wikipedia.org)](https://en.wikipedia.org/wiki/Open/closed_principle)
-- [The Open Closed Principle (blog.cleancoder.com)](https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html)
+- [Open Closed Principle (wikipedia.org)][83]
+- [The Open Closed Principle (blog.cleancoder.com)][84]
 
 ## Single Responsibility Principle
 
@@ -536,7 +529,7 @@ responsibility should be entirely encapsulated by the class. Responsibility can
 be defined as a reason to change, so a class or module should have one, and only
 one, reason to change.
 
-**SRP** is the S in [SOLID](#solid).
+**SRP** is the S in [SOLID][29].
 
 Why
 
@@ -544,11 +537,11 @@ Why
 
 How
 
-- Apply [Curly's Law](#curlys-Law).
+- Apply [Curly's Law][85].
 
 Resources
 
-- [Single responsibility principle (wikipedia.org)](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+- [Single responsibility principle (wikipedia.org)][86]
 
 ## Hide Implementation Details
 
@@ -569,15 +562,15 @@ How
 
 Resources
 
-- [Information hiding (wikipedia.org)](https://en.wikipedia.org/wiki/Information_hiding)
+- [Information hiding (wikipedia.org)][87]
 
 ## Curly's Law
 
 Curly's Law is about choosing a single, clearly defined goal for any particular
 bit of code: Do One Thing.
 
-- [Curly's Law: Do One Thing (blog.codinghorror.com)](https://blog.codinghorror.com/curlys-law-do-one-thing/)
-- [The Rule of One or Curly’s Law (grsmentor.com)](http://grsmentor.com/blog/the-rule-of-one-or-curlys-law/)
+- [Curly's Law: Do One Thing (blog.codinghorror.com)][88]
+- [The Rule of One or Curly’s Law (grsmentor.com)][89]
 
 ## Encapsulate What Changes
 
@@ -596,9 +589,9 @@ How
 
 Resources
 
-- [Encapsulate the Concept that Varies (principles-wiki.net)](http://principles-wiki.net/principles:encapsulate_the_concept_that_varies)
-- [Encapsulate What Varies (blogs.msdn.microsoft.com)](https://blogs.msdn.microsoft.com/steverowe/2007/12/26/encapsulate-what-varies/)
-- [Information hiding (wikipedia.org)](https://en.wikipedia.org/wiki/Information_hiding)
+- [Encapsulate the Concept that Varies (principles-wiki.net)][90]
+- [Encapsulate What Varies (blogs.msdn.microsoft.com)][91]
+- [Information hiding (wikipedia.org)][87]
 
 ## Interface Segregation Principle
 
@@ -606,7 +599,7 @@ Reduce fat interfaces into multiple smaller and more specific client specific
 interfaces. An interface should be more dependent on the code that calls it than
 the code that implements it.
 
-**ISP** is the I in [SOLID](#solid).
+**ISP** is the I in [SOLID][29].
 
 Why
 
@@ -615,12 +608,11 @@ Why
 How
 
 - Avoid fat interfaces. Classes should never have to implement methods that
-  violate the
-  [Single responsibility principle](#single-responsibility-principle).
+  violate the [Single responsibility principle][22].
 
 Resources
 
-- [Interface segregation principle (wikipedia.org)](https://en.wikipedia.org/wiki/Interface_segregation_principle)
+- [Interface segregation principle (wikipedia.org)][92]
 
 ## Command Query Separation
 
@@ -646,8 +638,8 @@ How
 
 Resources
 
-- [Command Query Separation (wikipedia.org)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
-- [Command Query Separation (martinfowler.com)](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+- [Command Query Separation (wikipedia.org)][93]
+- [Command Query Separation (martinfowler.com)][94]
 
 ## Dependency Inversion Principle
 
@@ -657,7 +649,7 @@ put, when components of our system have dependencies, we don’t want to directl
 inject a component’s dependency into another. Instead, we should use a level of
 abstraction between them.
 
-**DIP** is the D in [SOLID](#solid).
+**DIP** is the D in [SOLID][29].
 
 Why
 
@@ -677,23 +669,23 @@ How
   of a class.
 - Depends on abstractions, not on concretions.
 - Using patterns like Factory, Service Locator, and Dependency Injection.
-- Use the [Inversion of Control](#inversion-of-control) principle.
+- Use the [Inversion of Control][18] principle.
 
 Resources
 
-- [SOLID — Dependency Inversion Principle](https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e)
-- [Dependency inversion principle (wikipedia.org)](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
-- [System Design: Dependency Inversion Principle](https://www.baeldung.com/cs/dip)
+- [SOLID — Dependency Inversion Principle][95]
+- [Dependency inversion principle (wikipedia.org)][96]
+- [System Design: Dependency Inversion Principle][97]
 
 ## SOLID
 
 A subset of programming principles:
 
-- [Single Responsibility Principle](#single-responsibility-principle)
-- [Open/Closed Principle](#openclosed-principle)
-- [Liskov Substitution Principle](#liskov-substitution-principle)
-- [Interface Segregation Principle](#interface-segregation-principle)
-- [Dependency Inversion Principle](#dependency-inversion-principle)
+- [Single Responsibility Principle][22]
+- [Open/Closed Principle][21]
+- [Liskov Substitution Principle][20]
+- [Interface Segregation Principle][26]
+- [Dependency Inversion Principle][28]
 
 ## FIRST principles of testing
 
@@ -702,7 +694,7 @@ Repeatable, Self-validating and Timely.
 
 Resources
 
-- [F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html)
+- [F.I.R.S.T.][98]
 
 ## Arrange, Act, Assert
 
@@ -712,5 +704,113 @@ _Assert_ that the expected results have occurred.
 
 Resources
 
-- [Arrange Act Assert (wiki.c2.com)](https://wiki.c2.com/?ArrangeActAssert)
-- [3A - Arrange, Act, Assert (xp123.com)](https://xp123.com/articles/3a-arrange-act-assert/)
+- [Arrange Act Assert (wiki.c2.com)][99]
+- [3A - Arrange, Act, Assert (xp123.com)][100]
+
+[1]: https://www.artima.com/weblogs/viewpost.jsp?thread=331531
+[2]: https://github.com/webpro/programming-principles/issues
+[3]: #kiss
+[4]: #yagni
+[5]: #do-the-simplest-thing-that-could-possibly-work
+[6]: #separation-of-concerns
+[7]: #code-for-the-maintainer
+[8]: #avoid-premature-optimization
+[9]: #optimize-for-deletion
+[10]: #keep-things-dry
+[11]: #boy-scout-rule
+[12]: #connascence
+[13]: #minimise-coupling
+[14]: #law-of-demeter
+[15]: #composition-over-inheritance
+[16]: #orthogonality
+[17]: #robustness-principle
+[18]: #inversion-of-control
+[19]: #maximise-cohesion
+[20]: #liskov-substitution-principle
+[21]: #openclosed-principle
+[22]: #single-responsibility-principle
+[23]: #hide-implementation-details
+[24]: #curlys-law
+[25]: #encapsulate-what-changes
+[26]: #interface-segregation-principle
+[27]: #command-query-separation
+[28]: #dependency-inversion-principle
+[29]: #solid
+[30]: #first-principles-of-testing
+[31]: #arrange-act-assert
+[32]: https://en.wikipedia.org/wiki/KISS_principle
+[33]: http://principles-wiki.net/principles:keep_it_simple_stupid
+[34]: https://github.com/zakirullin/cognitive-load
+[35]:
+  https://florian-kraemer.net/software-architecture/2024/07/25/The-Limits-of-Human-Cognitive-Capacities-in-Programming.html
+[36]: https://eugeneyan.com/writing/simplicity/
+[37]: http://c2.com/xp/YouArentGonnaNeedIt.html
+[38]: https://ronjeffries.com/xprog/articles/practices/pracnotneed/
+[39]: https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
+[40]: http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html
+[41]: https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+[42]: https://en.wikipedia.org/wiki/Separation_of_concerns
+[43]: http://www.sensible.com/dmmt.html
+[44]: https://en.wikipedia.org/wiki/Principle_of_least_astonishment
+[45]: http://wiki.c2.com/?CodeForTheMaintainer
+[46]: https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/
+[47]: https://en.wikiquote.org/wiki/Donald_Knuth
+[48]: http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast
+[49]: https://en.wikipedia.org/wiki/Program_optimization
+[50]: http://wiki.c2.com/?PrematureOptimization
+[51]: https://www.youtube.com/watch?v=Ed94CfxgsCA
+[52]: https://work.stevegrossi.com/2016/11/04/optimize-for-deletion/
+[53]: https://kellysutton.com/2017/05/29/deletability.html
+[54]:
+  https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to
+[55]: https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
+[56]: http://wiki.c2.com/?DontRepeatYourself
+[57]: https://en.wikipedia.org/wiki/Don't_repeat_yourself
+[58]: https://thevaluable.dev/dry-principle-cost-benefit-example/
+[59]: https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)
+[60]: http://wiki.c2.com/?OnceAndOnlyOnce
+[61]: https://en.wikipedia.org/wiki/Single_Source_of_Truth
+[62]: http://thedailywtf.com/articles/The-WET-Cart
+[63]:
+  https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html
+[64]: https://martinfowler.com/bliki/OpportunisticRefactoring.html
+[65]: https://connascence.io
+[66]: https://en.wikipedia.org/wiki/Connascence
+[67]: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+[68]: http://wiki.c2.com/?CouplingAndCohesion
+[69]: https://en.wikipedia.org/wiki/Law_of_Demeter
+[70]: https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
+[71]: #lsp
+[72]: https://en.wikipedia.org/wiki/Composition_over_inheritance
+[73]:
+  https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance
+[74]: https://www.artima.com/intv/dry3.html
+[75]: https://en.wikipedia.org/wiki/Orthogonality_(programming)
+[76]: https://en.wikipedia.org/wiki/Robustness_principle
+[77]: https://martinfowler.com/bliki/TolerantReader.html
+[78]: https://en.wikipedia.org/wiki/Inversion_of_control
+[79]: https://www.martinfowler.com/articles/injection.html
+[80]: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+[81]: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+[82]: https://reflectoring.io/lsp-explained/
+[83]: https://en.wikipedia.org/wiki/Open/closed_principle
+[84]:
+  https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html
+[85]: #curlys-Law
+[86]: https://en.wikipedia.org/wiki/Single_responsibility_principle
+[87]: https://en.wikipedia.org/wiki/Information_hiding
+[88]: https://blog.codinghorror.com/curlys-law-do-one-thing/
+[89]: http://grsmentor.com/blog/the-rule-of-one-or-curlys-law/
+[90]: http://principles-wiki.net/principles:encapsulate_the_concept_that_varies
+[91]:
+  https://blogs.msdn.microsoft.com/steverowe/2007/12/26/encapsulate-what-varies/
+[92]: https://en.wikipedia.org/wiki/Interface_segregation_principle
+[93]: https://en.wikipedia.org/wiki/Command%E2%80%93query_separation
+[94]: https://martinfowler.com/bliki/CommandQuerySeparation.html
+[95]:
+  https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e
+[96]: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+[97]: https://www.baeldung.com/cs/dip
+[98]: https://agileinaflash.blogspot.com/2009/02/first.html
+[99]: https://wiki.c2.com/?ArrangeActAssert
+[100]: https://xp123.com/articles/3a-arrange-act-assert/
