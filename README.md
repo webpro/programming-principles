@@ -783,7 +783,7 @@ Resources
 [69]: http://wiki.c2.com/?CouplingAndCohesion
 [70]: https://en.wikipedia.org/wiki/Law_of_Demeter
 [71]: https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
-[72]: #lsp
+[72]: #liskov-substitution-principle
 [73]: https://en.wikipedia.org/wiki/Composition_over_inheritance
 [74]:
   https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance
@@ -799,11 +799,12 @@ Resources
 [84]: https://en.wikipedia.org/wiki/Open/closed_principle
 [85]:
   https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html
-[86]: #curlys-Law
+[86]: #curlys-law
 [87]: https://en.wikipedia.org/wiki/Single_responsibility_principle
 [88]: https://en.wikipedia.org/wiki/Information_hiding
 [89]: https://blog.codinghorror.com/curlys-law-do-one-thing/
-[90]: http://grsmentor.com/blog/the-rule-of-one-or-curlys-law/
+[90]:
+  https://web.archive.org/web/20260317070705/https://grsmentor.com/blog/the-rule-of-one-or-curlys-law/
 [91]: http://principles-wiki.net/principles:encapsulate_the_concept_that_varies
 [92]:
   https://blogs.msdn.microsoft.com/steverowe/2007/12/26/encapsulate-what-varies/
